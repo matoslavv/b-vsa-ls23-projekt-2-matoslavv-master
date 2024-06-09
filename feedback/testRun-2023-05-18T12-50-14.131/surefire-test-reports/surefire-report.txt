@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.StudentResourceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.044 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.StudentResourceTest
+shouldDeleteStudent  Time elapsed: 2.285 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldDeleteStudent(StudentResourceTest.java:209)
+
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 38.913 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest
+shouldCallFindThesesWithEmptyCriteria  Time elapsed: 1.606 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <500>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallFindThesesWithEmptyCriteria(ThesisResourceTest.java:585)
+
+shouldSubmitThesisWithTeacherAndWithWrongStudent  Time elapsed: 3.156 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacherAndWithWrongStudent(ThesisResourceTest.java:475)
+
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.SanityCheckTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.177 s - in sk.stuba.fei.uim.vsa.pr2.SanityCheckTest
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.601 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest
+deleteTeacher  Time elapsed: 2.088 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.deleteTeacher(TeacherResourceTest.java:209)
+
+---------------------------------------------------------------------
+ 

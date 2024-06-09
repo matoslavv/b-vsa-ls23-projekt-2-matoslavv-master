@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="11.044" tests="10" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8109235902606707363.jar /tested--b-vsa-ls23-projekt-2/target/surefire 2023-05-18T12-50-39_443-jvmRun1 surefire5351622860026268251tmp surefire_04871089881597498440tmp"/>
+    <property name="surefire.test.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8109235902606707363.jar"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.90.1-microsoft-standard-WSL2"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldGetNotFoundForNonExistingStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.648"/>
+  <testcase name="shouldCreateStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="0.625"/>
+  <testcase name="shouldReturnUnauthorized" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="0.082"/>
+  <testcase name="shouldReturnForbiddenToDeleteWithWrongStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.602"/>
+  <testcase name="shouldGetAllStudents" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.625"/>
+  <testcase name="shouldCreateStudentWithOnlyRequiredProperties" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="0.622"/>
+  <testcase name="shouldGetEmptyList" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.191"/>
+  <testcase name="shouldCallWithoutBodyAndReturnError" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="0.098"/>
+  <testcase name="shouldDeleteStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="2.285">
+    <failure message="expected: not &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldDeleteStudent(StudentResourceTest.java:209)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 12:50:50.415--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-14,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (AISID = ?)
+	bind => [70127]
+[EL Fine]: sql: 2023-05-18 12:50:50.416--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-14,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:50:50.973--ClientSession(636438874)--Connection(812031404)--Thread(Thread[grizzly-http-server-14,5,main])--INSERT INTO STUDENT (AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, 70127, Test Student, $2a$13$p.XdylUyhoax9/4e8ETeQuYUNScxahqrPfubH/FOfEiWtRFGXmwrO, API, 18, 8]
+2023-05-18 12:50:50.988  INFO --- [-http-server-15] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: xstudent@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:50:50.989--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-15,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:50:50.99--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-15,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:50:51.569--ClientSession(800898193)--Connection(812031404)--Thread(Thread[grizzly-http-server-15,5,main])--DELETE FROM Student_PERMISSIONS WHERE (Student_AISID = ?)
+	bind => [70127]
+[EL Fine]: sql: 2023-05-18 12:50:51.57--ClientSession(800898193)--Connection(812031404)--Thread(Thread[grizzly-http-server-15,5,main])--DELETE FROM STUDENT WHERE (AISID = ?)
+	bind => [70127]
+2023-05-18 12:50:51.585  INFO --- [-http-server-16] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: xstudent@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:50:51.585--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-16,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:50:51.586--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-16,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:50:51.593--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-17,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (AISID = ?)
+	bind => [81230]
+[EL Fine]: sql: 2023-05-18 12:50:51.594--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-17,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstu@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:50:52.104--ClientSession(2008587771)--Connection(812031404)--Thread(Thread[grizzly-http-server-17,5,main])--INSERT INTO STUDENT (AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [81230, xstu@stuba.sk, 81230, Testovaci Studenttt, $2a$13$CqX6B1UcBt1epLS09JFBk.DIml0xdj9n/h5m7yXaBkBzoj5ronE0C, B-API, 6, 3]
+2023-05-18 12:50:52.117  INFO --- [-http-server-18] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: xstu@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:50:52.118--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-18,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstu@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:50:52.118--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-18,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [xstu@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:50:52.617--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-18,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (AISID = ?)
+	bind => [70127]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.093"/>
+</testsuite>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="38.913" tests="21" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8109235902606707363.jar /tested--b-vsa-ls23-projekt-2/target/surefire 2023-05-18T12-50-39_443-jvmRun1 surefire5351622860026268251tmp surefire_04871089881597498440tmp"/>
+    <property name="surefire.test.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8109235902606707363.jar"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.90.1-microsoft-standard-WSL2"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldCallCreateThesisWithLoggedStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.252"/>
+  <testcase name="shouldGetNotFoundForNonExistingThesis" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.656"/>
+  <testcase name="shouldFindThesisByStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="2.684"/>
+  <testcase name="shouldCreateThesis" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.187"/>
+  <testcase name="shouldReturnUnauthorized" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="0.088"/>
+  <testcase name="shouldFindThesisByTeacher" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.615"/>
+  <testcase name="shouldAssignThesisWithStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="2.625"/>
+  <testcase name="shouldGetThesis" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.597"/>
+  <testcase name="shouldAssignThesisWithTeacher" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="2.14"/>
+  <testcase name="shouldCallDeleteThesisWithAnotherTeacher" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="2.092"/>
+  <testcase name="shouldGetEmptyList" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.098"/>
+  <testcase name="shouldCallFindThesesWithEmptyCriteria" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.606">
+    <failure message="expected: &lt;200&gt; but was: &lt;500&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <500>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallFindThesesWithEmptyCriteria(ThesisResourceTest.java:585)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 12:51:11.959--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-37,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (AISID = ?)
+	bind => [45678]
+[EL Fine]: sql: 2023-05-18 12:51:11.96--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-37,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:12.47--ClientSession(945096610)--Connection(812031404)--Thread(Thread[grizzly-http-server-37,5,main])--INSERT INTO TEACHER (AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [45678, SI, ucitel.test@stuba.sk, 45678, UIM, Testovaci ucitel, $2a$13$KWsSDOhr1RW6Y71KPuvUGuQ6RJfAdW0TsNcTWgNkyM47f8fuhD2ki]
+2023-05-18 12:51:12.483  INFO --- [-http-server-38] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:51:12.484--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-38,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:12.484--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-38,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:12.976--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-38,5,main])--SELECT ID, DEADLINE, DEPARTMENT, DESCRIPTION, PUBLISHEDON, REGISTRATIONNUMBER, STATUS, TITLE, TYPE, SUPERVISOR_AISID, AUTHOR_AISID FROM THESIS WHERE (REGISTRATIONNUMBER = ?)
+	bind => [FEI-a8e164a6f56843458bd89970a808297c]
+[EL Fine]: sql: 2023-05-18 12:51:12.978--ClientSession(1463441778)--Connection(812031404)--Thread(Thread[grizzly-http-server-38,5,main])--INSERT INTO THESIS (ID, DEADLINE, DEPARTMENT, DESCRIPTION, PUBLISHEDON, REGISTRATIONNUMBER, STATUS, TITLE, TYPE, SUPERVISOR_AISID, AUTHOR_AISID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [9, 2023-08-18, SI, Some description of the thesis, 2023-05-18, FEI-a8e164a6f56843458bd89970a808297c, FREE_TO_TAKE, Excellent Simple Bachelor Thesis, BACHELOR, 45678, null]
+2023-05-18 12:51:12.993  INFO --- [-http-server-39] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:51:12.993--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-39,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:12.994--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-39,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCreateThesisWithOnlyRequiredProperties" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.163"/>
+  <testcase name="shouldCallWithoutBodyAndReturnError" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.175"/>
+  <testcase name="shouldSubmitThesisWithStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="3.136"/>
+  <testcase name="shouldCallDeleteThesisWithStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="2.096"/>
+  <testcase name="shouldSubmitThesisWithTeacher" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="3.12"/>
+  <testcase name="shouldDeleteThesis" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.643"/>
+  <testcase name="shouldCallFindThesesWithWrongCriteria" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.565"/>
+  <testcase name="shouldSubmitThesisWithTeacherAndWithWrongStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="3.156">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacherAndWithWrongStudent(ThesisResourceTest.java:475)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 12:51:27.458--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-26,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (AISID = ?)
+	bind => [45678]
+[EL Fine]: sql: 2023-05-18 12:51:27.458--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-26,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:27.942--ClientSession(90390745)--Connection(812031404)--Thread(Thread[grizzly-http-server-26,5,main])--INSERT INTO TEACHER (AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [45678, SI, ucitel.test@stuba.sk, 45678, UIM, Testovaci ucitel, $2a$13$HJxRiutCk0zRvPBdOWfqzeytXUCMGdE4YTh10U/.HufLvqBiRI6Yu]
+2023-05-18 12:51:27.955  INFO --- [-http-server-27] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:51:27.956--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-27,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:27.956--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-27,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:28.436--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-27,5,main])--SELECT ID, DEADLINE, DEPARTMENT, DESCRIPTION, PUBLISHEDON, REGISTRATIONNUMBER, STATUS, TITLE, TYPE, SUPERVISOR_AISID, AUTHOR_AISID FROM THESIS WHERE (REGISTRATIONNUMBER = ?)
+	bind => [FEI-a8e164a6f56843458bd89970a808297c]
+[EL Fine]: sql: 2023-05-18 12:51:28.437--ClientSession(1097701508)--Connection(812031404)--Thread(Thread[grizzly-http-server-27,5,main])--INSERT INTO THESIS (ID, DEADLINE, DEPARTMENT, DESCRIPTION, PUBLISHEDON, REGISTRATIONNUMBER, STATUS, TITLE, TYPE, SUPERVISOR_AISID, AUTHOR_AISID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [16, 2023-08-18, SI, Some description of the thesis, 2023-05-18, FEI-a8e164a6f56843458bd89970a808297c, FREE_TO_TAKE, Excellent Simple Bachelor Thesis, BACHELOR, 45678, null]
+[EL Fine]: sql: 2023-05-18 12:51:28.446--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-28,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (AISID = ?)
+	bind => [70127]
+[EL Fine]: sql: 2023-05-18 12:51:28.447--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-28,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:28.93--ClientSession(478082074)--Connection(812031404)--Thread(Thread[grizzly-http-server-28,5,main])--INSERT INTO STUDENT (AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, 70127, Test Student, $2a$13$gJI8MusU6mhIgEeLOzvjsuadmaiLewIzCXCWK59wB/giAXG2CU2F6, API, 18, 8]
+2023-05-18 12:51:28.944  INFO --- [-http-server-29] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:51:28.944--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-29,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:28.944--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-29,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:29.427--ClientSession(1364238311)--Connection(812031404)--Thread(Thread[grizzly-http-server-29,5,main])--UPDATE THESIS SET STATUS = ?, AUTHOR_AISID = ? WHERE (ID = ?)
+	bind => [IN_PROGRESS, 70127, 16]
+[EL Fine]: sql: 2023-05-18 12:51:29.442--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-30,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (AISID = ?)
+	bind => [81230]
+[EL Fine]: sql: 2023-05-18 12:51:29.443--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-30,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstu@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:29.976--ClientSession(1898588199)--Connection(812031404)--Thread(Thread[grizzly-http-server-30,5,main])--INSERT INTO STUDENT (AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [81230, xstu@stuba.sk, 81230, Testovaci Studenttt, $2a$13$2.CaJfarN2cDsCayhEivrewnTnK9m2kebtNB0ZHE2ucz8ayBzP8eC, B-API, 6, 3]
+2023-05-18 12:51:30.010  INFO --- [-http-server-31] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:51:30.013--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-31,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:30.016--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-31,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetAllTheses" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="2.093"/>
+</testsuite>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sk.stuba.fei.uim.vsa.pr2.SanityCheckTest" time="2.177" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8109235902606707363.jar /tested--b-vsa-ls23-projekt-2/target/surefire 2023-05-18T12-50-39_443-jvmRun1 surefire5351622860026268251tmp surefire_04871089881597498440tmp"/>
+    <property name="surefire.test.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8109235902606707363.jar"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.90.1-microsoft-standard-WSL2"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testValidityOfPOMFile" classname="sk.stuba.fei.uim.vsa.pr2.SanityCheckTest" time="0.013"/>
+  <testcase name="testForResourcesAvailability" classname="sk.stuba.fei.uim.vsa.pr2.SanityCheckTest" time="0.189"/>
+  <testcase name="testPersistentUnit" classname="sk.stuba.fei.uim.vsa.pr2.SanityCheckTest" time="0.003"/>
+</testsuite>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="11.601" tests="11" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8109235902606707363.jar /tested--b-vsa-ls23-projekt-2/target/surefire 2023-05-18T12-50-39_443-jvmRun1 surefire5351622860026268251tmp surefire_04871089881597498440tmp"/>
+    <property name="surefire.test.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8109235902606707363.jar"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.90.1-microsoft-standard-WSL2"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldCreateTeacherWithOnlyRequiredProperties" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="0.672"/>
+  <testcase name="shouldGetTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.086"/>
+  <testcase name="deleteTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="2.088">
+    <failure message="expected: not &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.deleteTeacher(TeacherResourceTest.java:209)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 12:51:34.564--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-3,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (AISID = ?)
+	bind => [45678]
+[EL Fine]: sql: 2023-05-18 12:51:34.565--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-3,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:35.057--ClientSession(1994575810)--Connection(812031404)--Thread(Thread[grizzly-http-server-3,5,main])--INSERT INTO TEACHER (AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [45678, SI, ucitel.test@stuba.sk, 45678, UIM, Testovaci ucitel, $2a$13$IT0ZEhK9sAKfYQLh7BppcuK.JifI94UKrwWmLF5SVIL9zj7CX9ofK]
+2023-05-18 12:51:35.072  INFO --- [y-http-server-4] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:51:35.073--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-4,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:35.073--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-4,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:35.566--ClientSession(921763527)--Connection(812031404)--Thread(Thread[grizzly-http-server-4,5,main])--DELETE FROM THESIS WHERE (SUPERVISOR_AISID = ?)
+	bind => [45678]
+[EL Fine]: sql: 2023-05-18 12:51:35.568--ClientSession(1020045506)--Connection(812031404)--Thread(Thread[grizzly-http-server-4,5,main])--DELETE FROM Teacher_PERMISSIONS WHERE (Teacher_AISID = ?)
+	bind => [45678]
+[EL Fine]: sql: 2023-05-18 12:51:35.568--ClientSession(1020045506)--Connection(812031404)--Thread(Thread[grizzly-http-server-4,5,main])--DELETE FROM TEACHER WHERE (AISID = ?)
+	bind => [45678]
+2023-05-18 12:51:35.580  INFO --- [y-http-server-5] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:51:35.581--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-5,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:35.581--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-5,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:35.587--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-6,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (AISID = ?)
+	bind => [123456]
+[EL Fine]: sql: 2023-05-18 12:51:35.588--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-6,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [test.teacher@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:36.078--ClientSession(1591344639)--Connection(812031404)--Thread(Thread[grizzly-http-server-6,5,main])--INSERT INTO TEACHER (AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [123456, BIS, test.teacher@stuba.sk, 123456, UIMM, Meno testovacieho uciteľa, $2a$13$UCtcq7NQbuZEYcu6OoN7HOKHXSnzLZN95DJSCxrwVioes.gVa/tLK]
+2023-05-18 12:51:36.090  INFO --- [y-http-server-7] s.s.f.u.v.pr2.auth.AuthenticationFilter  : Credentials: test.teacher@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 12:51:36.091--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-7,5,main])--SELECT AISID, EMAIL, ID, NAME, PASSWORD, PROGRAMME, TERM, YEAR FROM STUDENT WHERE (EMAIL = ?)
+	bind => [test.teacher@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:36.091--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-7,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (EMAIL = ?)
+	bind => [test.teacher@stuba.sk]
+[EL Fine]: sql: 2023-05-18 12:51:36.576--ServerSession(195163481)--Connection(812031404)--Thread(Thread[grizzly-http-server-7,5,main])--SELECT AISID, DEPARTMENT, EMAIL, ID, INSTITUTE, NAME, PASSWORD FROM TEACHER WHERE (AISID = ?)
+	bind => [45678]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetNotFoundForNonExistingTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.083"/>
+  <testcase name="shouldReturnUnauthorized" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="0.084"/>
+  <testcase name="shouldCreateTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="0.589"/>
+  <testcase name="shouldReturnForbiddenToDeleteTeacherWithStudent" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.58"/>
+  <testcase name="shouldReturnForbiddenToDeleteWithWrongTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.579"/>
+  <testcase name="shouldGetEmptyList" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.083"/>
+  <testcase name="shouldCallWithoutBodyAndReturnError" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="0.078"/>
+  <testcase name="shouldGetAllTeachers" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.579"/>
+</testsuite></testsuites>

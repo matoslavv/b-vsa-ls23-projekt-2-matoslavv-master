@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><evaluation>
+  <exam>b-vsa-ls23-projekt-2</exam>
+  <student>
+    <aisId>111172</aisId>
+    <name>Matej Bednár</name>
+    <email>xbednarm@stuba.sk</email>
+    <github>matoslavv</github>
+  </student>
+  <testRuns>
+    <testRun>
+      <id>testRun-2023-05-27T13-34-46.803</id>
+      <totalRun>45</totalRun>
+      <success>44</success>
+      <failure>1</failure>
+      <error>0</error>
+      <skipped>0</skipped>
+      <points>15</points>
+      <bonus>false</bonus>
+      <duration>PT1M23.393S</duration>
+    </testRun>
+    <testRun>
+      <id>testRun-2023-05-27T13-36-10.200</id>
+      <totalRun>3</totalRun>
+      <success>0</success>
+      <failure>0</failure>
+      <error>0</error>
+      <skipped>3</skipped>
+      <points>0</points>
+      <bonus>true</bonus>
+      <duration>PT11.019S</duration>
+    </testRun>
+  </testRuns>
+  <totalPoints>15</totalPoints>
+  <notes/>
+  <testDuration>PT1M34.412S</testDuration>
+</evaluation>

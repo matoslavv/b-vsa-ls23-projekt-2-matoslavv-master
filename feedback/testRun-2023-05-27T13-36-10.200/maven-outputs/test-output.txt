@@ -1,0 +1,360 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< sk.stuba.fei.uim.vsa:b-vsa-ls23-project2 >--------------
+[INFO] Building b-vsa-ls23-project2 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ b-vsa-ls23-project2 ---
+[INFO] Deleting /tested--b-vsa-ls23-projekt-2/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ b-vsa-ls23-project2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ b-vsa-ls23-project2 ---
+[INFO] Compiling 41 source files to /tested--b-vsa-ls23-projekt-2/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ b-vsa-ls23-project2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ b-vsa-ls23-project2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ b-vsa-ls23-project2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tested--b-vsa-ls23-projekt-2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ b-vsa-ls23-project2 ---
+[INFO] Compiling 22 source files to /tested--b-vsa-ls23-projekt-2/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ b-vsa-ls23-project2 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest
+2023-05-27 13:36:18.473  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Starting HTTP server for testing
+2023-05-27 13:36:18.492  INFO --- [           main] s.s.fei.uim.vsa.pr2.Project2Application  : Starting Grizzly2 HTTP server...
+2023-05-27 13:36:18.492  INFO --- [           main] s.s.f.u.v.pr2.ApplicationConfiguration   : Set base uri: http://docker-desktop:8080/api
+2023-05-27 13:36:18.492  INFO --- [           main] s.s.fei.uim.vsa.pr2.Project2Application  : Server listening on http://docker-desktop:8080/api
+2023-05-27 13:36:18.744  INFO --- [           main] org.reflections.Reflections              : Reflections took 67 ms to scan 2 urls, producing 20 keys and 42 values
+2023-05-27 13:36:18.757  INFO --- [           main] .s.f.u.v.p.JAXRSApplicationConfiguration : Registered resource classes: [class sk.stuba.fei.uim.vsa.pr2.resources.ThesisResource, class sk.stuba.fei.uim.vsa.pr2.resources.TeacherResource, class sk.stuba.fei.uim.vsa.pr2.resources.SearchResource, class sk.stuba.fei.uim.vsa.pr2.resources.StudentResource]
+2023-05-27 13:36:18.758  INFO --- [           main] .s.f.u.v.p.JAXRSApplicationConfiguration : Registered feature providers: [class sk.stuba.fei.uim.vsa.pr2.auth.AuthenticationFilter, class sk.stuba.fei.uim.vsa.pr2.auth.AuthorizationFilter]
+[EL Fine]: server: 2023-05-27 13:36:19.306--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2023-05-27 13:36:19.387--ServerSession(2144334265)--Thread(Thread[main,5,main])--The access type for the persistent class [class sk.stuba.fei.uim.vsa.pr1.solution.User] is set to [FIELD].
+[EL Config]: metadata: 2023-05-27 13:36:19.399--ServerSession(2144334265)--Thread(Thread[main,5,main])--The target class (reference) class for the element collection mapping element [field permissions] is being defaulted to: class sk.stuba.fei.uim.vsa.pr2.auth.Permission.
+[EL Config]: metadata: 2023-05-27 13:36:19.401--ServerSession(2144334265)--Thread(Thread[main,5,main])--The access type for the persistent class [class sk.stuba.fei.uim.vsa.pr1.solution.Teacher] is set to [FIELD].
+[EL Config]: metadata: 2023-05-27 13:36:19.404--ServerSession(2144334265)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field supervisedTheses] is being defaulted to: class sk.stuba.fei.uim.vsa.pr1.solution.Thesis.
+[EL Config]: metadata: 2023-05-27 13:36:19.404--ServerSession(2144334265)--Thread(Thread[main,5,main])--The target class (reference) class for the element collection mapping element [field permissions] is being defaulted to: class sk.stuba.fei.uim.vsa.pr2.auth.Permission.
+[EL Config]: metadata: 2023-05-27 13:36:19.404--ServerSession(2144334265)--Thread(Thread[main,5,main])--The access type for the persistent class [class sk.stuba.fei.uim.vsa.pr1.solution.Thesis] is set to [FIELD].
+[EL Config]: metadata: 2023-05-27 13:36:19.405--ServerSession(2144334265)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field author] is being defaulted to: class sk.stuba.fei.uim.vsa.pr1.solution.Student.
+[EL Config]: metadata: 2023-05-27 13:36:19.407--ServerSession(2144334265)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field supervisor] is being defaulted to: class sk.stuba.fei.uim.vsa.pr1.solution.Teacher.
+[EL Config]: metadata: 2023-05-27 13:36:19.408--ServerSession(2144334265)--Thread(Thread[main,5,main])--The access type for the persistent class [class sk.stuba.fei.uim.vsa.pr1.solution.Student] is set to [FIELD].
+[EL Config]: metadata: 2023-05-27 13:36:19.408--ServerSession(2144334265)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field thesis] is being defaulted to: class sk.stuba.fei.uim.vsa.pr1.solution.Thesis.
+[EL Config]: metadata: 2023-05-27 13:36:19.408--ServerSession(2144334265)--Thread(Thread[main,5,main])--The target class (reference) class for the element collection mapping element [field permissions] is being defaulted to: class sk.stuba.fei.uim.vsa.pr2.auth.Permission.
+[EL Config]: metadata: 2023-05-27 13:36:19.412--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2023-05-27 13:36:19.412--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2023-05-27 13:36:19.412--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-05-27 13:36:19.413--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [aisId] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.413--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2023-05-27 13:36:19.413--ServerSession(2144334265)--Thread(Thread[main,5,main])--The alias name for the entity class [class sk.stuba.fei.uim.vsa.pr1.solution.Teacher] is being defaulted to: Teacher.
+[EL Config]: metadata: 2023-05-27 13:36:19.418--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2023-05-27 13:36:19.418--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2023-05-27 13:36:19.418--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [institute] is being defaulted to: INSTITUTE.
+[EL Config]: metadata: 2023-05-27 13:36:19.419--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-05-27 13:36:19.419--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [department] is being defaulted to: DEPARTMENT.
+[EL Config]: metadata: 2023-05-27 13:36:19.419--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [aisId] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.419--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2023-05-27 13:36:19.42--ServerSession(2144334265)--Thread(Thread[main,5,main])--The alias name for the entity class [class sk.stuba.fei.uim.vsa.pr1.solution.Thesis] is being defaulted to: Thesis.
+[EL Config]: metadata: 2023-05-27 13:36:19.42--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [registrationNumber] is being defaulted to: REGISTRATIONNUMBER.
+[EL Config]: metadata: 2023-05-27 13:36:19.42--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [description] is being defaulted to: DESCRIPTION.
+[EL Config]: metadata: 2023-05-27 13:36:19.42--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [publishedOn] is being defaulted to: PUBLISHEDON.
+[EL Config]: metadata: 2023-05-27 13:36:19.421--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-05-27 13:36:19.422--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [title] is being defaulted to: TITLE.
+[EL Config]: metadata: 2023-05-27 13:36:19.422--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [type] is being defaulted to: TYPE.
+[EL Config]: metadata: 2023-05-27 13:36:19.424--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [department] is being defaulted to: DEPARTMENT.
+[EL Config]: metadata: 2023-05-27 13:36:19.424--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [deadline] is being defaulted to: DEADLINE.
+[EL Config]: metadata: 2023-05-27 13:36:19.424--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [status] is being defaulted to: STATUS.
+[EL Config]: metadata: 2023-05-27 13:36:19.424--ServerSession(2144334265)--Thread(Thread[main,5,main])--The alias name for the entity class [class sk.stuba.fei.uim.vsa.pr1.solution.Student] is being defaulted to: Student.
+[EL Config]: metadata: 2023-05-27 13:36:19.424--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2023-05-27 13:36:19.425--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [year] is being defaulted to: YEAR.
+[EL Config]: metadata: 2023-05-27 13:36:19.425--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2023-05-27 13:36:19.425--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [term] is being defaulted to: TERM.
+[EL Config]: metadata: 2023-05-27 13:36:19.426--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-05-27 13:36:19.426--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [programme] is being defaulted to: PROGRAMME.
+[EL Config]: metadata: 2023-05-27 13:36:19.426--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [aisId] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.426--ServerSession(2144334265)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2023-05-27 13:36:19.439--ServerSession(2144334265)--Thread(Thread[main,5,main])--The collection table name for the basic collection/map mapping [field permissions] is being defaulted to: _PERMISSIONS.
+[EL Config]: metadata: 2023-05-27 13:36:19.439--ServerSession(2144334265)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field permissions] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.44--ServerSession(2144334265)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [permissions] is being defaulted to: _AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.441--ServerSession(2144334265)--Thread(Thread[main,5,main])--The value column name for the basic collection/map mapping element mapping element [permissions] is being defaulted to: PERMISSIONS.
+[EL Fine]: metadata: 2023-05-27 13:36:19.441--Thread(Thread[main,5,main])--java.lang.ClassNotFoundException: java.util.Listsk.stuba.fei.uim.vsa.pr2.auth.Permission
+[EL Config]: metadata: 2023-05-27 13:36:19.441--ServerSession(2144334265)--Thread(Thread[main,5,main])--The collection table name for the basic collection/map mapping [field permissions] is being defaulted to: Teacher_PERMISSIONS.
+[EL Config]: metadata: 2023-05-27 13:36:19.441--ServerSession(2144334265)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field permissions] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.441--ServerSession(2144334265)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [permissions] is being defaulted to: Teacher_AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.442--ServerSession(2144334265)--Thread(Thread[main,5,main])--The value column name for the basic collection/map mapping element mapping element [permissions] is being defaulted to: PERMISSIONS.
+[EL Config]: metadata: 2023-05-27 13:36:19.442--ServerSession(2144334265)--Thread(Thread[main,5,main])--The collection table name for the basic collection/map mapping [field permissions] is being defaulted to: Student_PERMISSIONS.
+[EL Config]: metadata: 2023-05-27 13:36:19.442--ServerSession(2144334265)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field permissions] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.443--ServerSession(2144334265)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [permissions] is being defaulted to: Student_AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.443--ServerSession(2144334265)--Thread(Thread[main,5,main])--The value column name for the basic collection/map mapping element mapping element [permissions] is being defaulted to: PERMISSIONS.
+[EL Config]: metadata: 2023-05-27 13:36:19.448--ServerSession(2144334265)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field author] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.449--ServerSession(2144334265)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [author] is being defaulted to: AUTHOR_AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.449--ServerSession(2144334265)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field supervisor] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-27 13:36:19.449--ServerSession(2144334265)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [supervisor] is being defaulted to: SUPERVISOR_AISID.
+[EL Info]: 2023-05-27 13:36:19.589--ServerSession(2144334265)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3
+[EL Fine]: connection: 2023-05-27 13:36:19.639--ServerSession(2144334265)--Connection(1161644395)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "vsa"
+	datasource URL=> "jdbc:postgresql://localhost:5432/vsa_pr2_matoslavv"
+))
+[EL Config]: connection: 2023-05-27 13:36:19.779--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5432/vsa_pr2_matoslavv
+	User: vsa
+	Database: PostgreSQL  Version: 15.2 (Debian 15.2-1.pgdg110+1)
+	Driver: PostgreSQL JDBC Driver  Version: 42.5.4
+[EL Fine]: connection: 2023-05-27 13:36:19.872--ServerSession(2144334265)--Thread(Thread[main,5,main])--/file:/tested--b-vsa-ls23-projekt-2/target/classes/_vsa-project-2 login successful
+[EL Config]: metadata: 2023-05-27 13:36:19.887--Thread(Thread[main,5,main])--The default table generator could not locate or convert a java type (class sk.stuba.fei.uim.vsa.pr2.auth.Permission) into a database type for database field (Teacher_PERMISSIONS.PERMISSIONS). The generator uses "java.lang.String" as default java type for the field.
+[EL Config]: metadata: 2023-05-27 13:36:19.888--Thread(Thread[main,5,main])--The default table generator could not locate or convert a java type (class sk.stuba.fei.uim.vsa.pr2.auth.Permission) into a database type for database field (Student_PERMISSIONS.PERMISSIONS). The generator uses "java.lang.String" as default java type for the field.
+[EL Fine]: sql: 2023-05-27 13:36:19.889--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--ALTER TABLE THESIS DROP CONSTRAINT FK_THESIS_SUPERVISOR_AISID
+[EL Fine]: sql: 2023-05-27 13:36:19.901--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.911--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "thesis" does not exist
+Error Code: 0
+Call: ALTER TABLE THESIS DROP CONSTRAINT FK_THESIS_SUPERVISOR_AISID
+Query: DataModifyQuery(sql="ALTER TABLE THESIS DROP CONSTRAINT FK_THESIS_SUPERVISOR_AISID")
+[EL Fine]: sql: 2023-05-27 13:36:19.912--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--ALTER TABLE THESIS DROP CONSTRAINT FK_THESIS_AUTHOR_AISID
+[EL Fine]: sql: 2023-05-27 13:36:19.913--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.914--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "thesis" does not exist
+Error Code: 0
+Call: ALTER TABLE THESIS DROP CONSTRAINT FK_THESIS_AUTHOR_AISID
+Query: DataModifyQuery(sql="ALTER TABLE THESIS DROP CONSTRAINT FK_THESIS_AUTHOR_AISID")
+[EL Fine]: sql: 2023-05-27 13:36:19.914--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--ALTER TABLE Teacher_PERMISSIONS DROP CONSTRAINT FK_Teacher_PERMISSIONS_Teacher_AISID
+[EL Fine]: sql: 2023-05-27 13:36:19.915--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.916--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "teacher_permissions" does not exist
+Error Code: 0
+Call: ALTER TABLE Teacher_PERMISSIONS DROP CONSTRAINT FK_Teacher_PERMISSIONS_Teacher_AISID
+Query: DataModifyQuery(sql="ALTER TABLE Teacher_PERMISSIONS DROP CONSTRAINT FK_Teacher_PERMISSIONS_Teacher_AISID")
+[EL Fine]: sql: 2023-05-27 13:36:19.916--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--ALTER TABLE Student_PERMISSIONS DROP CONSTRAINT FK_Student_PERMISSIONS_Student_AISID
+[EL Fine]: sql: 2023-05-27 13:36:19.917--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.917--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "student_permissions" does not exist
+Error Code: 0
+Call: ALTER TABLE Student_PERMISSIONS DROP CONSTRAINT FK_Student_PERMISSIONS_Student_AISID
+Query: DataModifyQuery(sql="ALTER TABLE Student_PERMISSIONS DROP CONSTRAINT FK_Student_PERMISSIONS_Student_AISID")
+[EL Fine]: sql: 2023-05-27 13:36:19.918--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE TEACHER CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.918--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.919--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher" does not exist
+Error Code: 0
+Call: DROP TABLE TEACHER CASCADE
+Query: DataModifyQuery(sql="DROP TABLE TEACHER CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.919--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.92--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.92--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.921--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE THESIS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.921--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.922--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesis" does not exist
+Error Code: 0
+Call: DROP TABLE THESIS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESIS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.922--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Teacher_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.923--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.923--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Teacher_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Teacher_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.923--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Student_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.924--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.925--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Student_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Student_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.925--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE TEACHER CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.926--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.926--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher" does not exist
+Error Code: 0
+Call: DROP TABLE TEACHER CASCADE
+Query: DataModifyQuery(sql="DROP TABLE TEACHER CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.927--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.927--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.928--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.928--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE THESIS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.929--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.93--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesis" does not exist
+Error Code: 0
+Call: DROP TABLE THESIS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESIS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.93--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Teacher_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.931--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.931--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Teacher_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Teacher_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.931--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Student_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.932--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.932--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Student_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Student_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.932--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE TEACHER CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.933--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.933--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher" does not exist
+Error Code: 0
+Call: DROP TABLE TEACHER CASCADE
+Query: DataModifyQuery(sql="DROP TABLE TEACHER CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.934--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.935--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.936--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.936--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE THESIS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.937--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.938--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesis" does not exist
+Error Code: 0
+Call: DROP TABLE THESIS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESIS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.938--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Teacher_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.938--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.939--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Teacher_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Teacher_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.939--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Student_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.939--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.94--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Student_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Student_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.94--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE TEACHER CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.941--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.941--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher" does not exist
+Error Code: 0
+Call: DROP TABLE TEACHER CASCADE
+Query: DataModifyQuery(sql="DROP TABLE TEACHER CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.942--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.942--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.943--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.944--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE THESIS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.945--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.945--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesis" does not exist
+Error Code: 0
+Call: DROP TABLE THESIS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESIS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.946--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Teacher_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.946--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.946--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Teacher_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Teacher_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.947--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Student_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.947--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.948--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Student_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Student_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.948--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE TEACHER CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.949--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.949--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher" does not exist
+Error Code: 0
+Call: DROP TABLE TEACHER CASCADE
+Query: DataModifyQuery(sql="DROP TABLE TEACHER CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.949--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.95--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.95--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.951--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE THESIS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.951--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.952--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesis" does not exist
+Error Code: 0
+Call: DROP TABLE THESIS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESIS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.952--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Teacher_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.953--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.953--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "teacher_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Teacher_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Teacher_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.954--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DROP TABLE Student_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-27 13:36:19.954--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.955--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE Student_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE Student_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-27 13:36:19.959--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2023-05-27 13:36:19.959--ServerSession(2144334265)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-27 13:36:19.96--ServerSession(2144334265)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "sequence" does not exist
+  Position: 13
+Error Code: 0
+Call: DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+Query: DataModifyQuery(sql="DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'")
+[EL Config]: metadata: 2023-05-27 13:36:19.961--Thread(Thread[main,5,main])--The default table generator could not locate or convert a java type (class sk.stuba.fei.uim.vsa.pr2.auth.Permission) into a database type for database field (Teacher_PERMISSIONS.PERMISSIONS). The generator uses "java.lang.String" as default java type for the field.
+[EL Config]: metadata: 2023-05-27 13:36:19.961--Thread(Thread[main,5,main])--The default table generator could not locate or convert a java type (class sk.stuba.fei.uim.vsa.pr2.auth.Permission) into a database type for database field (Student_PERMISSIONS.PERMISSIONS). The generator uses "java.lang.String" as default java type for the field.
+[EL Warning]: ddl: 2023-05-27 13:36:19.963--ServerSession(2144334265)--Thread(Thread[main,5,main])--Removing UNIQUE constraint definition from [TEACHER.AISID] because it is also a primary key.
+[EL Fine]: sql: 2023-05-27 13:36:19.963--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--CREATE TABLE TEACHER (AISID BIGINT NOT NULL, DEPARTMENT VARCHAR(255), EMAIL VARCHAR(255) NOT NULL UNIQUE, ID BIGINT NOT NULL UNIQUE, INSTITUTE VARCHAR(255), NAME VARCHAR(255) NOT NULL, PASSWORD VARCHAR(255), PRIMARY KEY (AISID))
+[EL Warning]: ddl: 2023-05-27 13:36:19.991--ServerSession(2144334265)--Thread(Thread[main,5,main])--Removing UNIQUE constraint definition from [STUDENT.AISID] because it is also a primary key.
+[EL Fine]: sql: 2023-05-27 13:36:19.991--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--CREATE TABLE STUDENT (AISID BIGINT NOT NULL, EMAIL VARCHAR(255) NOT NULL UNIQUE, ID BIGINT NOT NULL UNIQUE, NAME VARCHAR(255) NOT NULL, PASSWORD VARCHAR(255), PROGRAMME VARCHAR(255), TERM INTEGER, YEAR INTEGER, PRIMARY KEY (AISID))
+[EL Fine]: sql: 2023-05-27 13:36:20.012--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--CREATE TABLE THESIS (ID BIGINT NOT NULL, DEADLINE DATE, DEPARTMENT VARCHAR(255), DESCRIPTION VARCHAR(255), PUBLISHEDON DATE NOT NULL, REGISTRATIONNUMBER VARCHAR(255) NOT NULL UNIQUE, STATUS VARCHAR(255), TITLE VARCHAR(255) NOT NULL, TYPE VARCHAR(255), SUPERVISOR_AISID BIGINT NOT NULL, AUTHOR_AISID BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2023-05-27 13:36:20.028--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--CREATE TABLE Teacher_PERMISSIONS (Teacher_AISID BIGINT, PERMISSIONS VARCHAR(255))
+[EL Fine]: sql: 2023-05-27 13:36:20.031--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--CREATE TABLE Student_PERMISSIONS (Student_AISID BIGINT, PERMISSIONS VARCHAR(255))
+[EL Fine]: sql: 2023-05-27 13:36:20.034--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--ALTER TABLE THESIS ADD CONSTRAINT FK_THESIS_SUPERVISOR_AISID FOREIGN KEY (SUPERVISOR_AISID) REFERENCES TEACHER (AISID)
+[EL Fine]: sql: 2023-05-27 13:36:20.037--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--ALTER TABLE THESIS ADD CONSTRAINT FK_THESIS_AUTHOR_AISID FOREIGN KEY (AUTHOR_AISID) REFERENCES STUDENT (AISID)
+[EL Fine]: sql: 2023-05-27 13:36:20.04--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--ALTER TABLE Teacher_PERMISSIONS ADD CONSTRAINT FK_Teacher_PERMISSIONS_Teacher_AISID FOREIGN KEY (Teacher_AISID) REFERENCES TEACHER (AISID)
+[EL Fine]: sql: 2023-05-27 13:36:20.043--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--ALTER TABLE Student_PERMISSIONS ADD CONSTRAINT FK_Student_PERMISSIONS_Student_AISID FOREIGN KEY (Student_AISID) REFERENCES STUDENT (AISID)
+[EL Fine]: sql: 2023-05-27 13:36:20.047--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--CREATE TABLE SEQUENCE (SEQ_NAME VARCHAR(50) NOT NULL, SEQ_COUNT DECIMAL(38), PRIMARY KEY (SEQ_NAME))
+[EL Fine]: sql: 2023-05-27 13:36:20.054--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2023-05-27 13:36:20.057--ServerSession(2144334265)--Connection(79620878)--Thread(Thread[main,5,main])--INSERT INTO SEQUENCE(SEQ_NAME, SEQ_COUNT) values ('SEQ_GEN', 0)
+2023-05-27 13:36:20.261  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Creating client for HTTP server
+2023-05-27 13:36:20.274  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Client created JerseyWebTarget { http://docker-desktop:8080/api }
+[EL Fine]: moxy: 2023-05-27 13:36:20.302--Thread(Thread[main,5,main])--SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@4b6e1c0
+2023-05-27 13:36:20.809  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Cleaning after the test
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.5 s - in sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 3
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.890 s
+[INFO] Finished at: 2023-05-27T13:36:21Z
+[INFO] ------------------------------------------------------------------------
